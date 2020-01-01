@@ -1,24 +1,23 @@
-# starter
+# About
 
-## Project setup
+Starter Amplify application using lambda, api gateway and cognito user auth.
+[Reference here](https://github.com/ErikCH/Aws-auth-example)
+
+# Create amplify application
+
 ```
-yarn install
+amplify init
+amplify push
 ```
 
-### Compiles and hot-reloads for development
+# Build frontend
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
+yarn
 yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+# Deploy the frontend
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+First push the code to an amplify supported git repos such as github, gitlab etc. then
+connect the frontend from the amplify application ui. Note that you might need to update
+the serving path to 'dist'.
